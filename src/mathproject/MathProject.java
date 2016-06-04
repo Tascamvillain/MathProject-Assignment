@@ -19,22 +19,23 @@ public class MathProject {
     public static void main(String[] args) {
         // TODO code application logic here
         Arithmetic arithmetic = new Arithmetic();
-        
-        int answer1 = arithmetic.add(5000000, 8666353);
-        int answer2 = arithmetic.subtract(552, 866788);
-        int answer3 = arithmetic.division(543462, 8677326);
-        
-        System.out.println("Answer1 -->  " + answer1);
-        System.out.println("Answer2 -->  " + answer2);
-        System.out.println("Answer3 -->  " + answer3);
-        
-        String a = JOptionPane.showInputDialog(null, "Number 1:");
-        String b = JOptionPane.showInputDialog(null, "Number 2:");
+        String x = JOptionPane.showInputDialog("Enter Number 1:");
+        String y = JOptionPane.showInputDialog("Enter Number 2:");
+
+        int a = Integer.parseInt(x);  // conversion
+        int b = Integer.parseInt(y);  // 
+
+        int answer1 = arithmetic.add(a, b);
+        int answer2 = arithmetic.subtract(a, b);
+        int answer3 = arithmetic.division(a, b);
+
         System.out.println("===================================================================");
-        System.out.println(a + b);
-        
-        
-        
+        System.out.println(answer1);
+        System.out.println(answer2);
+        System.out.println(answer3);
+        JOptionPane.showMessageDialog(null, "Add result --> " + answer1);
+        JOptionPane.showMessageDialog(null, "Substract result --> " + answer2);
+        JOptionPane.showMessageDialog(null, "Division result -->  " + answer3);
 
     }
 
