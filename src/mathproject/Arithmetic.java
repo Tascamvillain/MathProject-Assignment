@@ -13,7 +13,7 @@ public class Arithmetic {
     private int aplha;
     private double gamma;
     int number1 = 1;
-    float number2 = 2;
+    double number2 = 2;
     
     public void add (){         
         System.out.println (number1 + number2);
