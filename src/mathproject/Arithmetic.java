@@ -12,16 +12,19 @@ package mathproject;
 public class Arithmetic {
     private int aplha;
     private double gamma;
-    int number1 = 1;
-    double number2 = 2;
+    //int number1 = 1;
+    //double number2 = 2;
     
-    public void add (){         
-        System.out.println (number1 + number2);
+    public int add (int number1, int number2){ 
+        int c = number1 + number2;
+        return c;
     }
-    public void subtract (){
-    System.out.println (number1 - number2);
+    public int subtract (int number1, int number2){
+        int c = number1 - number2;
+        return c;
     }
-    public void division (){
-    System.out.println (number1 / number2);
+    public int division (int number1, int number2){
+        int c = number1 / number2;
+        return c;
     }
 }
